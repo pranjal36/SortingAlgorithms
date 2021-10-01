@@ -1,8 +1,8 @@
 from tkinter import *
 from tkinter import ttk
 import random
-from bubble_sort import bubblesort
-from quicksort import quick_sort
+from BubbleSort import bubbleSort
+from QuickSort import quickSort
 
 '''Now we create a root widget, by calling the Tk().
     This automatically creates a graphical window with the title bar, minimize, maximize and close buttons.
@@ -23,10 +23,10 @@ def StartAlgorithm():
         return
 
     if algo_menu.get() == 'Quick Sort':
-        quick_sort(data, 0, len(data) - 1, drawData, speedscale.get())
+        quickSort(data, 0, len(data) - 1, drawData, speedscale.get())
 
     elif algo_menu.get() == "Bubble Sort":
-        bubblesort(data, drawData, speedscale.get())
+        bubbleSort(data, drawData, speedscale.get())
 
 
 def drawData(data, colorArray):
