@@ -1,4 +1,5 @@
 # SortingAlgorithms
+<<<<<<< HEAD
 This repository contains all the **Sorting** algorithms that are present out there, in all the major programming languages, such as C, C++, Java, Python, etc.
 
 >Note: This repo is not yet complete. There are many languages to be added. Also, there are many sorting algorithms that need to be added. Fellow contributors can contribute to this repository to help other programmers with programming.
@@ -6,3 +7,7 @@ This repository contains all the **Sorting** algorithms that are present out the
 To contribute to this repo, fork this repository, create a program demonstrating a particular sorting algorithm in a specific language that's not already present here, and create a pull request (PR). PR will be reviewed and then any specific action (merge / reject) will be taken.
 
 Happy Coding!
+=======
+
+Read [Guidelines For Contributions](https://github.com/Isha2103/SortingAlgorithms/blob/main/CONTRIBUTING.md)
+>>>>>>> bc49fe261d237626571a9de0c16646a9a2616ba4
