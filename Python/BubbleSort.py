@@ -22,11 +22,13 @@ def bubbleSort(arr):
         if swapped == False:
             break
           
-# Driver code to test above
-arr = [64, 34, 25, 12, 22, 11, 90]
-  
-bubbleSort(arr)
-  
-print ("Sorted array :")
-for i in range(len(arr)):
-    print ("%d" %arr[i],end=" ")
+
+if __name__=="__main__":        
+    # Driver code to test above
+    arr = [64, 34, 25, 12, 22, 11, 90]
+    
+    bubbleSort(arr)
+    
+    print ("Sorted array :")
+    for i in range(len(arr)):
+        print ("%d" %arr[i],end=" ")
