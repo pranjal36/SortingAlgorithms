@@ -1,6 +1,7 @@
+package Java;
 import java.util.Scanner;
 
-public class NewSort {
+class NewSort {
 
 	void sort(int arr[]) 
     { 
