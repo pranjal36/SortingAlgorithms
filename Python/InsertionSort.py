@@ -12,18 +12,18 @@ def insertionSort(arr):
             j -= 1
         arr[j+1] = key 
 
+if __name__=="__main__":  
+    # Driver code to test above
+    arr = [12, 11, 13, 5, 6]
 
-# Driver code to test above
-arr = [12, 11, 13, 5, 6]
+    # Display original array
+    print("Original Array:", end=" ")
+    for i in range(len(arr)): 
+        print(arr[i], end=" ")
 
-# Display original array
-print("Original Array:", end=" ")
-for i in range(len(arr)): 
-    print(arr[i], end=" ")
+    insertionSort(arr)
 
-insertionSort(arr)
-
-# Display sorted array
-print(), print("Sorted Array:", end=" ")
-for i in range(len(arr)):
-    print(arr[i], end=" ")
+    # Display sorted array
+    print(), print("Sorted Array:", end=" ")
+    for i in range(len(arr)):
+        print(arr[i], end=" ")

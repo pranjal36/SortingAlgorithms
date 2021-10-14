@@ -1,4 +1,4 @@
-def shell_sort(array, func=lambda x : x//2):
+def shell_sort(arr, func=lambda x : x//2):
     N = len(arr)
     gap = func(N)
 
@@ -19,18 +19,18 @@ def shell_sort(array, func=lambda x : x//2):
         gap = func(gap)
 
 
+if __name__=="__main__":  
+    # Driver code
+    arr = [64, 25, 12, 22, 11]
 
-# Driver code
-arr = [64, 25, 12, 22, 11]
+    # Display original array
+    print("Original Array:", end=" ")
+    for i in range(len(arr)): 
+        print(arr[i], end=" ")
 
-# Display original array
-print("Original Array:", end=" ")
-for i in range(len(arr)): 
-    print(arr[i], end=" ")
+    shell_sort(arr) 
 
-shell_sort(arr) 
-
-# Display sorted array
-print(), print("Sorted Array:", end=" ")
-for i in range(len(arr)):
-    print(arr[i], end=" ")
+    # Display sorted array
+    print(), print("Sorted Array:", end=" ")
+    for i in range(len(arr)):
+        print(arr[i], end=" ")

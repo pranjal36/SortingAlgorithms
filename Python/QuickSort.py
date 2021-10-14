@@ -21,7 +21,7 @@ def partition(arr,low,high):
 # high --> Ending index 
 
 # Function to do Quick sort 
-def quickSort(arr,low,high): 
+def _quickSort(arr,low,high): 
 	if low < high: 
 
 		# pi is partitioning index, arr[p] is now 
@@ -30,9 +30,11 @@ def quickSort(arr,low,high):
 
 		# Separately sort elements before 
 		# partition and after partition 
-		quickSort(arr, low, pi-1) 
-		quickSort(arr, pi+1, high) 
+		_quickSort(arr, low, pi-1) 
+		_quickSort(arr, pi+1, high) 
 
+def quickSort(arr):
+	_quickSort(arr, 0, len(arr)-1)
 
 
 if __name__=="__main__":
