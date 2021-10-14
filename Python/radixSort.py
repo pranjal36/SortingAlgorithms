@@ -34,11 +34,11 @@ def radixSort(arr):
         counting_sort(arr, exp)
         exp *= 10
 
+if __name__=="__main__":  
+    arr = [100, 96, 43, 56, 67, 32, 875, 24342, 7665, 5378755]
+    radixSort(arr)
 
-arr = [100, 96, 43, 56, 67, 32, 875, 24342, 7665, 5378755]
-radixSort(arr)
-
-for i in range(len(arr)):
-    print(arr[i]),
+    for i in range(len(arr)):
+        print(arr[i]),
 
    # code contributed by vibhor agarwal

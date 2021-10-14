@@ -13,18 +13,18 @@ def selection_sort(array):
 		array[i], array[min_idx] = array[min_idx], array[i]
 
 
+if __name__=="__main__":  
+	# Driver code
+	arr = [64, 25, 12, 22, 11]
 
-# Driver code
-arr = [64, 25, 12, 22, 11]
+	# Display original array
+	print("Original Array:", end=" ")
+	for i in range(len(arr)): 
+		print(arr[i], end=" ")
 
-# Display original array
-print("Original Array:", end=" ")
-for i in range(len(arr)): 
-    print(arr[i], end=" ")
+	selection_sort(arr) 
 
-selection_sort(arr) 
-
-# Display sorted array
-print(), print("Sorted Array:", end=" ")
-for i in range(len(arr)):
-    print(arr[i], end=" ")
+	# Display sorted array
+	print(), print("Sorted Array:", end=" ")
+	for i in range(len(arr)):
+		print(arr[i], end=" ")
